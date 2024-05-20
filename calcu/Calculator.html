@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="calt.js"></script>
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+		integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script> 
+	<script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+		integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+    <div class = "grid-container">
+       
+        <div class = "calculator-grid ">
+            
+                <textarea type="text" placeholder="0" id="result">   </textarea>                  
+       
+            <button class="button" onclick="cls()" onkeyup="myfunction(event)">C</button>
+            <button class="button" onclick="del()">DEL</button>
+            <button class="button" onclick="dis('')">⌫</button>
+            <button class="button" onclick="dis('+')">+</button>
+            <button type="button" value="7" onclick="dis('7')">7</button>
+            <button class="button" onclick="dis('8')" onkeyup="myfunction(event)">8</button>
+            <button class="button" onclick="dis('9')" onkeyup="myfunction(event)">9</button>
+            <button class="button" onclick="dis('-')">-</button>
+            <button class="button" onclick="dis('4')">4</button>
+            <button class="button" onclick="dis('5')">5</button>
+            <button class="button" onclick="dis('6')">6</button>
+            <button class="button" onclick="dis('*')">*</button>
+            <button class="button" onclick="dis('1')">1</button>
+            <button class="button" onclick="dis('2')">2</button>
+            <button class="button" onclick="dis('3')">3</button>
+            <button class="button" onclick="dis('/')">/</button>
+            <button class="button" onclick="dis('00')">00</button>
+            <button class="button" onclick="dis('0')">0</button>
+            <button class="button" onclick="dis('.')">.</button>
+            <button class="button" onclick="solve()">=</button>
+        </div>
+    
+    </div>
+</body>
+</html>
